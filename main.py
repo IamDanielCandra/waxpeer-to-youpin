@@ -174,3 +174,4 @@ if __name__ == "__main__":
     youpin_prices.to_csv('youpin_prices.csv', index=False)
 
     final = pd.merge(waxpeer_prices, youpin_prices, on='id', how='inner')
+    final.to_csv('final.csv', index=False)
